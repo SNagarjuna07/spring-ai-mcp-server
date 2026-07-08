@@ -2,3 +2,32 @@ spring:
   application:
     name: spring-ai-mcp-server
 
+  docker:
+    compose:
+      file: compose.yaml
+
+  datasource:
+      url: jdbc:postgresql://localhost:5432/taskdb
+      username: ${DB_USER:postgres}
+      password: ${DB_PASSWORD:postgres}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  ai:
+    mcp:
+      server:
+        protocol: STREAMABLE
+        name: kai-task-mcp-server
+        version: 1.0.0
+        type: SYNC
+        instructions: >
+            MCP server exposing Kai's task management tools: create, list pending,
+            complete, and search tasks. Destructive delete is NOT exposed here -
+            confirm-delete is a plain REST endpoint requiring human action, no
+            protocol access.
+
+server:
+  port: 8082
