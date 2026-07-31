@@ -7,9 +7,9 @@ spring:
       file: compose.yaml
 
   datasource:
-      url: jdbc:postgresql://localhost:5432/taskdb
-      username: ${DB_USER:postgres}
-      password: ${DB_PASSWORD:postgres}
+    url: jdbc:postgresql://localhost:5432/taskdb
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
 
   jpa:
     hibernate:
@@ -23,11 +23,12 @@ spring:
         name: kai-task-mcp-server
         version: 1.0.0
         type: SYNC
+        annotation-scanner:
+          enabled: true
         instructions: >
-            MCP server exposing Kai's task management tools: create, list pending,
-            complete, and search tasks. Destructive delete is NOT exposed here -
-            confirm-delete is a plain REST endpoint requiring human action, no
-            protocol access.
+          MCP server exposing Kai's task management tools, resources, and prompts.
+          Destructive delete is NOT exposed as a tool. Confirm-delete is a plain
+          REST endpoint requiring human action, no protocol access.
 
 server:
   port: 8082
