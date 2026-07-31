@@ -14,19 +14,10 @@
 </div>
 
 ---
-
 ## 🎥 Demo - Claude Desktop Managing Real Tasks Over MCP
 
-> **[PLACEHOLDER — drop your 2-minute screen recording here]**
->
-> Suggested embed once uploaded:
-> ```markdown
-> https://github.com/user-attachments/assets/YOUR-VIDEO-ID-HERE
-> ```
-> Or as a linked thumbnail:
-> ```markdown
-> [![Watch the demo](docs/demo-thumbnail.png)](https://your-video-link-here)
-> ```
+
+https://github.com/user-attachments/assets/b1cc89af-f5d4-4cb1-9421-e96aba196033
 
 ---
 
