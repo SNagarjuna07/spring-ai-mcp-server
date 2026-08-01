@@ -17,10 +17,8 @@
 
 ## 🎥 Demo - Claude Desktop Managing Real Tasks Over MCP
 
-> ```markdown
-> [Watch the demo]
-> (docs/![Claude MCP demo.gif](docs/Claude%20MCP%20demo.gif)demo-thumbnail.png)](https://your-video-link-here)
-> ```
+
+![Claude MCP demo](docs/Claude%20MCP%20demo.gif)
 
 ---
 
